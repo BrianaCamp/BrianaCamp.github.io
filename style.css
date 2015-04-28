@@ -1,0 +1,118 @@
+html{
+  margin:0;
+  font-family:'Playfair Display', serif;
+}
+/*NAVBAR*/
+
+.navbar {
+  background:#fff;
+  color:#000;
+  height:60px;
+  display:block;
+}
+
+.navbar ul{
+  text-transform:uppercase;
+  font-size:18px;
+  font-style:italic;
+
+}
+
+.navbar ul li {
+  display:inline-block;
+  list-style-type:none;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+  color:#000;
+}
+
+.navbar ul li a:hover{
+  color:#CCCF20;
+}
+
+
+
+
+
+/*INTRO*/
+
+.intro {
+  font-size:20vmin;
+  font-family:'freight-big-pro', serif;
+  font-weight:book;
+  font-style:italic;
+  text-transform:uppercase;
+}
+
+.bri,
+.camp{
+  color:#CCCF20;
+}
+.bri {
+  font-size:30vmin;
+  margin-left:12px;
+  margin-bottom:20px;
+
+}
+
+.camp {
+font-size:35vmin;
+margin-top:-52px;
+
+}
+
+.intro h2 span{
+  font-style:italic;
+  color:#CCCF20;
+
+}
+
+.intro h2{
+  font-size:5vmin;
+  font-style:italic;
+  letter-spacing:.5em;
+  margin-left:12px;
+  margin-bottom:72px;
+}
+
+/*WORK*/
+.work{
+  background-color:#CCCF20;
+  padding:1px 0 1px 26px;
+  margin-bottom:10px;
+}
+.work p{
+  text-transform:uppercase;
+  font-size:10vmin;
+  color:#fff;
+  font-weight:900;
+  letter-spacing:4px;
+
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+@media only screen and (min-width: 550px) {
+  .navbar ul{
+    font-size:25px;
+  }
+
+  .wrapper{
+    padding:0 55px;
+  }
+
+  .work{
+    max-width:75%
+  }
+
+  .work p{
+    font-size:8vmin;
+  }
+
+}
