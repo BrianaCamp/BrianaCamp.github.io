@@ -82,27 +82,26 @@ ul {
   font-size:1rem;
   font-style:italic;
 }
-span.school {
-  width:60%;
-  display:inline-block;
-}
 
-.school-year {
-  width:50%;
-  text-align:right;
-  display:inline-block;
-}
+
 
 p.honors{
   font-style:italic;
   font-size:1rem;
   margin-top:-1%;
+  display: block;
 }
 
 /* Projects */
 
-.projects p {
+.projects .head {
   font-weight:bold;
+}
+
+.project-website {
+  text-decoration:none;
+  color:#000;
+  font-size:14px;
 }
 
 /* Work-experience */
@@ -112,9 +111,12 @@ p.work-head {
 }
 
 
+/* References */
 
-
-
+a {
+  text-decoration: none;
+  color:#cccf20;
+}
 
 
 
@@ -190,6 +192,7 @@ p.work-head {
 
   p.honors{
     margin-top:-1%;
+    display:block;
   }
 
   /*work-experience*/
@@ -220,7 +223,7 @@ p.year {
   }
 
   @page {
-    margin:0.5cm;
+    margin:1cm;
     size: portrait;
   }
 
@@ -229,22 +232,29 @@ p.year {
 }
 
 @page:right{
+
   @bottom-right {
     content: counter(page);
   }
 }
 
-  /*general*/
-  .border {
-    display:none;
-  }
+
+
+/*general*/
+
+.container {
+height: auto;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 15px
+}
+
 /*header */
 
 .header h1 {
-color:black;
+
 font-size:20pt;
 }
-
 
 
 .header p{
@@ -252,9 +262,6 @@ font-size:20pt;
   margin-top:-20px;
 }
 
-.container {
-height: auto;
-}
 
 body {
   font-size:12pt;
@@ -264,8 +271,7 @@ body {
 }
 
 h2 {
-  margin-top:-10px;
-  color:#000;
+  margin-top:-20px;
   font-size:15pt;
 }
 
@@ -309,7 +315,7 @@ section.skills {
   font-size:11pt;
 }
 .proficient {
-  width:25%;
+  width:35%;
   font-size:10pt;
   margin:0 auto;
 }
@@ -340,6 +346,12 @@ section.skills {
 }
 
 
+.school2 {
+  width: 45%;
+  padding-top: 50px;
+}
+
+
 .education p.year {
 display:inline-block;
 width:50%;
@@ -358,6 +370,7 @@ text-align:right;
   display:inline-block;
   font-weight:normal;
   width:65%;
+  margin-top: 0;
 
 }
 
@@ -372,7 +385,7 @@ text-align:right;
 
 p.work-head {
   display:inline-block;
-  width:65%;
+  width:60%;
   margin-top:0;
 }
 
