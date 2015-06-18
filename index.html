@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="style/css" href="style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
   <script src="//use.typekit.net/uei5zwx.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
@@ -16,9 +17,9 @@
   <div class="wrapper">
   <div class="navbar">
     <ul>
-      <li><a href="#about">About /</a></li>
-      <li><a href="#contact">Contact /</a></li>
-      <li><a href="#resume">Resume</a></li>
+      <li><a href="/about">About /</a></li>
+      <li><a href="/about/#contact">Contact /</a></li>
+      <li><a href="/resume">Resume</a></li>
     </ul>
   </div>
 
@@ -29,19 +30,28 @@
   </div>
 
   <div class="work">
-    <p>work<br />
-      is<br />
-      fun</p>
+  <span id="workisfunv2"></span>
   </div>
   <div class="work-thumbnails">
+    <p class="thumbnail gp">
       <a href="http://www.ginandpine.com" target="_blank">
-        <img src="ginandpineexample.png" alt="Gin and Pine" />
+        gin &amp; pine
       </a>
+    </p>
     </div>
-    <a href="http://www.briana.camp/j62/index.html" target="_blank"></a>
-      <img src="j62example.png" alt="J62 Art" />
+    <p class="thumbnail j62">
+      <a href="http://www.briana.camp/j62/index.html" target="_blank" class="thumbnail">
+        j62 art
+      </a>
+    </p>
 </div>
 </div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="jquery.lazylinepainter-1.5.1.min.js"></script>
+<script src="jquery.visible.js"></script>
+<script src="jquery.visible.min.js"></script>
 
+<script src="script.js"></script>
 </body>
 </html>

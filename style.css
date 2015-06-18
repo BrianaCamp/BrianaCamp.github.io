@@ -33,7 +33,10 @@ html{
 }
 
 
-
+#workisfunv2 {
+  height:100%;
+  width:100%;
+}
 
 
 /*INTRO*/
@@ -43,6 +46,7 @@ html{
   font-family:"freight-big-pro", sans-serif;
   font-style:italic;
   text-transform:uppercase;
+
 }
 
 .bri,
@@ -50,14 +54,14 @@ html{
   color:#CCCF20;
 }
 .bri {
-  font-size:30vmin;
+  font-size:25vmin;
   margin-left:12px;
   margin-bottom:20px;
 
 }
 
 .camp {
-font-size:35vmin;
+font-size:30vmin;
 margin-top:-52px;
 
 }
@@ -81,6 +85,14 @@ margin-top:-52px;
   background-color:#CCCF20;
   padding:1px 0 1px 26px;
   margin-bottom:10px;
+  background: url(background-wis.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:93%;
+
+
 }
 .work p{
   text-transform:uppercase;
@@ -88,10 +100,59 @@ margin-top:-52px;
   color:#fff;
   font-weight:900;
   letter-spacing:4px;
+  text-align:center;
 
 }
 
 
+/* THUMBNAILS */
+
+.thumbnail {
+  width: 100%;
+  margin: 5px 0;
+  padding: 40px 0;
+
+}
+
+.thumbnail a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.gp {
+  background-color: #fd6d6d;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 8vmin;
+  font-style: italic;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  color: rgba(255,255,255,1);
+
+}
+
+
+.j62 {
+  background-color: #45B29D;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 8vmin;
+  font-family: sans-serif;
+  letter-spacing:2px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  color: rgba(255,255,255,1);
+
+}
 
 
 /*MEDIA QUERIES*/
@@ -102,16 +163,42 @@ margin-top:-52px;
     font-size:25px;
   }
 
-  .wrapper{
-    padding:0 55px;
+/*   .wrapper{
+  padding:0 55px;
+} */
+
+  .bri {
+    font-size:30vmin;
   }
 
-  .work{
-    max-width:75%
-  }
 
   .work p{
     font-size:8vmin;
   }
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .camp {
+    font-size: 35vmin;
+  }
+
+  .work {
+    /* height:38rem; */
+    width:100%;
+  }
+
+  .wrapper {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .work {
+    height: 38rem;
+  }
+
 
 }
