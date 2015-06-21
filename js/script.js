@@ -142,23 +142,9 @@ var pathObj = {
 };
 
 
-/*
- Setup and Paint your lazyline!
- */
+
 
 $(document).ready(function(){
-  // var viewableOffset = $("#workisfunv2").offset().top - $(window).scrollTop();
-  $(window).on('scroll', function() {
-    scrollPosition = $(this).scrollTop();
-    if (scrollPosition >= 500) {
-        // If the function is only supposed to fire once
-        $('#workisfunv2').lazylinepainter('paint');
-        console.log("working");
-        $(this).off('scroll');
-
-        // Other function stuff here...
-    }
-});
 
   $('#workisfunv2').lazylinepainter(
   {
@@ -171,6 +157,8 @@ $(document).ready(function(){
 
  });
 
-
+$(window).on('scroll', function(){
+  $('#workisfunv2:in-viewport').lazylinepainter('paint');
+});
 
 });
