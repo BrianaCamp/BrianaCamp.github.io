@@ -165,15 +165,16 @@ margin-top:-52px;
 .about h2 {
   text-transform: uppercase;
   font-family: "freight-big-pro", sans-serif;
-  font-size: 5vmin;
+  font-size: 8vmin;
   color: #CCCF20;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  font-style: italic;
 }
 
 .about img {
   border-radius: 50%;
-  width: 300px;
+  width: 250px;
   display: block;
   margin: 0 auto;
 
@@ -182,7 +183,10 @@ margin-top:-52px;
 .description {
   padding:10px;
   line-height: 1.2em;
+  font-family: 'Open Sans', sans-serif;
 }
+
+
 
 /*MEDIA QUERIES*/
 
