@@ -82,6 +82,7 @@ margin-top:-52px;
 }
 
 /*WORK*/
+
 .work{
   background-color:#CCCF20;
   margin-bottom:10px;
@@ -153,6 +154,35 @@ margin-top:-52px;
 
 }
 
+/* ABOUT */
+
+
+.about-line {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-family: "freight-big-pro", sans-serif;
+  font-size: 5vmin;
+  color: #CCCF20;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.description {
+  padding:10px;
+  line-height: 1.2em;
+}
 
 /*MEDIA QUERIES*/
 
@@ -229,6 +259,16 @@ margin-top:-52px;
   .gp {
     margin-right: 5px;
   }
+
+.description {
+  margin-top: 3%;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+
 
 
 }
