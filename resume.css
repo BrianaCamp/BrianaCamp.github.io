@@ -8,7 +8,7 @@ body {
 }
 
 .border {
-  background-image: url(line.svg);
+  background-image: url(images/line.svg);
   background-repeat: repeat-x;
   height:13px;
   margin:0 auto;
