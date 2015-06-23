@@ -124,6 +124,10 @@ margin-top:-52px;
 
 }
 
+.thumbnail:hover {
+  background-color: #CCCF20;
+}
+
 .thumbnail a {
   color: #fff;
   text-decoration: none;
@@ -218,6 +222,10 @@ margin-top:-52px;
 }
 
 /* FOOTER */
+
+.footer {
+  text-align:center;
+}
 
 .footer-hr img {
   display: block;
