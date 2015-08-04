@@ -1,5 +1,5 @@
 html{
-  margin:0;
+  margin: 0;
   font-family:'Playfair Display', serif;
 }
 /*NAVBAR*/
@@ -8,10 +8,9 @@ html{
   background:#fff;
   color:#000;
   height:60px;
-  display:block;
 }
 
-.navbar ul{
+.navbar ul {
   text-transform:uppercase;
   font-size:1.2;
   font-style:italic;
@@ -87,7 +86,7 @@ margin-top:-52px;
 
 /*WORK*/
 
-.work{
+.work {
   background-color:#CCCF20;
   margin-bottom:10px;
   background: url(images/background-wis.svg) no-repeat center center fixed;
@@ -98,7 +97,7 @@ margin-top:-52px;
 
 
 }
-.work p{
+.work p {
   text-transform:uppercase;
   font-size:8vmin;
   color:#fff;
