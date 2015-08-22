@@ -350,6 +350,9 @@ img.social {
 
 @media only screen and (min-width: 1000px) {
   .work {
-    height: 34rem;
+    max-height: 34rem;
+  }
+  svg {
+    max-height: 28rem;
   }
 }
