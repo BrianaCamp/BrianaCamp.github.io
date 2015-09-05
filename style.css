@@ -2,6 +2,11 @@ html{
   margin: 0;
   font-family:'Playfair Display', serif;
 }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 /*NAVBAR*/
 
 .navbar {
@@ -113,54 +118,79 @@ margin-top:-52px;
 .work-thumbnails {
   margin: 0 auto;
   width: 95%;
+  margin-top: 10px;
 }
 
 .thumbnail {
   width: 100%;
   margin: 5px 0;
-  padding: 50px 0;
   font-family: 'Libre Baskerville', serif;
   font-size: 8vmin;
   font-style: italic;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
-  box-sizing: border-box;
   border: none;
   letter-spacing:2px;
   color: rgba(255,255,255,1);
+  position: relative;
 
 
 }
 
-.thumbnail:hover {
-  background-color: #CCCF20;
+.thumbnail img:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .thumbnail a {
   color: #fff;
   text-decoration: none;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+p.heading {
+  position: absolute;
+  top:30px;
+  left:10px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 74%;
+  text-align: center;
+}
+
+p.caption {
+  background-color: #fff;
+  color: #000;
+  padding:10px;
+  position: absolute;
+  bottom: 56px;
+  left: 10px;
+  text-align: right;
+  width: 75%;
+  font-size: 1rem;
 
 }
 
-.dt {
-  background-color: #fd6d6d;
+.dt, .j62 {
+  border-bottom: 10px solid #60e89d;
+  border-right: 10px solid #60e89d;
+  border-left: 10px solid #CCCF20;
+  border-top: 10px solid #CCCF20;
 }
 
 .gp {
-  background-color: #60e89d;
-  color: rgba(255,255,255,1);
-
-
+  border-top: 10px solid #60e89d;
+  border-left: 10px solid #60e89d;
+  border-bottom: 10px solid #CCCF20;
+  border-right: 10px solid #CCCF20;
 }
 
 
-.j62 {
-  background-color: #dbdb85;
-  color: #fff;
-  padding: 0;
-
-}
 
 /* ABOUT */
 
@@ -273,11 +303,14 @@ img.social {
     margin-left: 35px;
   }
 
+  .thumbnail {
+    width: 49%;
+  }
 
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 668px) {
   .camp {
     font-size: 35vmin;
   }
@@ -313,13 +346,6 @@ img.social {
 
   }
 
-  .thumbnail {
-    width: 49%;
-    margin-top: 5px;
-    font-size: 4vmin;
-
-  }
-
 
 .description {
   margin-top: 3%;
@@ -339,12 +365,31 @@ img.social {
 
 
 @media only screen and (min-width: 830px) {
+  .wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   .work {
     height: 28rem;
   }
 
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .caption {
+    font-size: 1.2rem;
+  }
+
   .footer-hr img {
     width: 80%;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  .thumbnail {
+    width: 33%;
   }
 }
 
@@ -354,5 +399,13 @@ img.social {
   }
   svg {
     max-height: 28rem;
+  }
+
+  p.heading {
+    font-size: 2rem;
+  }
+
+  p.caption {
+    font-size: 1.5rem;
   }
 }
