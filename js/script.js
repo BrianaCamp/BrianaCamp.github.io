@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+//ANIMATED TEXT INTRO
   $('#workisfunv2').lazylinepainter(
   {
      "svgData": pathObj,
@@ -11,21 +12,20 @@ $(document).ready(function(){
 
  });
 
+ $('#handrawn-linev4').lazylinepainter(
+ {
+    "svgData": pathObj2,
+    "strokeWidth": 2,
+    "strokeColor": "#60e89d",
+    "responsive" : true
+ });
+
 $(window).on('scroll', function(){
   $('#workisfunv2:in-viewport').lazylinepainter('paint');
-});
-
-$('#handrawn-linev4').lazylinepainter(
-{
-   "svgData": pathObj2,
-   "strokeWidth": 2,
-   "strokeColor": "#60e89d",
-   "responsive" : true
-});
-
-$(window).on('scroll', function() {
   $('#handrawn-linev4:in-viewport').lazylinepainter('paint');
 });
+
+
 
 //from paululund.co.uk
 
@@ -44,3 +44,15 @@ $('a[href^="#"]').on('click',function (e) {
 
 
 });
+
+var caption = $(".caption"),
+    thumbnail = $(".thumbnail");
+
+if( $(window).width() >= 500) {
+  $(caption).hide();
+  $(thumbnail).mouseover(function () {
+    $(this).find(caption).show().addClass("transform");
+  });
+} else {
+  $(caption).show();
+}
