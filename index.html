@@ -3,106 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bri Camp is a front-end designer/developer living in Seattle, WA.">
+  <meta name="description" content="Bri Camp is a front-end developer living in Seattle, WA.">
   <title>Bri Camp</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="style/css" href="style.css" />
-  <link rel="stylesheet" type="style/css" href="normalize.css">
-  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <script src="//use.typekit.net/uei5zwx.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-66635105-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+  <link rel="stylesheet" type="text/css" href="styles/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
-  <div class="navbar">
-    <ul>
-      <li><a href="#about">About /</a></li>
-      <li><a href="#contact">Contact /</a></li>
-      <li><a href="/resume">Resume</a></li>
-    </ul>
-  </div>
-
-  <div class="intro">
-    <div class="bri">bri</div>
-    <div class="camp">camp</div>
-    <h2>coder <span>&amp;</span> designer</h2>
-  </div>
-
-  <div class="work">
-  <span id="workisfunv2"></span>
-  </div>
-  <div class="work-thumbnails">
-    <div class="thumbnail">
-      <a href="http://www.thedailytarot.com" target="_blank">
-        <p class="heading">the daily tarot</p>
-      <img class="dt" src="images/wheeloffortune.png" alt="The Daily Tarot">
-      <p class="caption"> logo design // JavaScript // jQuery</p>
-      </a>
-    </div>
-    <div class="thumbnail">
-      <a href="http://www.ginandpine.com" target="_blank">
-        <p class="heading">gin &amp; pine</p>
-        <img class="gp" src="images/ginandpineex2.png" alt="Gin and Pine">
-        <p class="caption">design //<br /> jquery</p>
-      </a>
-    </div>
-    <div class="thumbnail">
-      <a href="http://www.briana.camp/j62/index.html" target="_blank">
-        <p class="heading">
-          J62 art
-        </p>
-        <img class="j62" src="images/j62example1.png" alt="J62 Art" />
-        <p class="caption">design //<br /> bootstrap</p>
-      </a>
-    </div>
-    </div>
-    <section class="about" id="about">
-      <p id="handrawn-linev4"></p>
-      <h2>about</h2>
-      <img src="images/bri-03-2015.jpg" alt="Bri Camp">
-      <p class="description">
-        My name is Bri, and I have a serious passion for both JavaScript and design! I have a background in Art History where I studied social anthropology and emerging technologies. These interests still remain unscathed as I am interested in building innovative products, web applications, the internet of things, etc. When I'm not coding, I'm eating hamburgers (a self-proclaimed connoisseur) and going to meet-ups.
-        <span>Currently, I am looking for a front-end developer position.</span></p>
-        <p class="say-hi" id="contact">
-          <a href="mailto:brianarcamp@gmail.com">Say Hi!</a>
-        </p>
-
-
+  <main class="main-wrapper">
+    <section class="about">
+      <h1 class="about__header">bri camp</h1>
+      <h3 class="about__job">front-end developer at <a href="http://www.fictivekin.com" class="about__link">fictive kin</a></h3>
     </section>
-    <section class="footer">
-      <img src="images/handdrawn-linev5.svg" alt="" class="footer-hr">
-
-
-          <a href="http://www.github.com/brianacamp" target="_blank">
-            <img src="images/githubicon.png" alt="Github" class="social">
-          </a>
-
-          <a href="http://www.twitter.com/brianacamp" target="_blank">
-            <img src="images/twittericonblackv2.png" alt="Twitter" class="social">
-          </a>
-          <p>Designed and developed by Bri Camp, &copy; 2015</p>
-
+    <section class="work">
+      <ul class="work__list">
+        <li class="work__list-items"><a href="http://pearlauto.com" class="work__link">pearl auto</a></li>
+        <li class="work__list-items"><a href="http://www.fictivekin.com" class="work__link">fictivekin.com</a></li>
+        <li class="work__list-items"><a href="http://www.foldermarket.com" class="work__link">folder market</a></li>
+      </ul>
     </section>
-
-</div>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="lib/jquery.lazylinepainter-1.5.1.min.js"></script>
-<script src="isinviewport/isInViewport.min.js"></script>
-<script src="lib/jquery.visible.min.js"></script>
-<script src="js/svg.js"></script>
-<script src="js/script.js"></script>
+  </main>
 </body>
 </html>

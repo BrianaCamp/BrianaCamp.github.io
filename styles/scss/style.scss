@@ -1,0 +1,21 @@
+$pink: pink;
+$lavender: lavender;
+$white: #ffffff;
+
+
+.main-wrapper {
+  width: 100%;
+  padding: 5%;
+  background-color: $pink;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: $white;
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 100;
+}
