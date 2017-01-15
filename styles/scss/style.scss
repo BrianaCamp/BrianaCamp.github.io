@@ -1,7 +1,11 @@
+@import 'bourbon/bourbon';
 $pink: pink;
 $lavender: lavender;
 $white: #ffffff;
 
+* {
+  box-sizing: border-box;
+}
 
 .main-wrapper {
   width: 100%;
@@ -18,4 +22,8 @@ a {
   color: $white;
   font-family: 'Overpass Mono', monospace;
   font-weight: 100;
+}
+
+a {
+  @include transition(color .3s ease-in-out);
 }
