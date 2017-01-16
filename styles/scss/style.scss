@@ -2,6 +2,13 @@
 $pink: pink;
 $lavender: lavender;
 $white: #ffffff;
+$grey: #C9CDCC;
+$brown-red: #D0C5C3;
+$light-purple: #BDAFC0;
+$dark-purple: #949ABE;
+$green: #6cf5d2;
+$fuscia: #c451dc;
+$maroon: #692323;
 
 * {
   box-sizing: border-box;
@@ -12,6 +19,25 @@ $white: #ffffff;
   padding: 5%;
   background-color: $pink;
   min-height: 100vh;
+  @include background-image(url('../../images/bg-disco.png'));
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.main-wrapper:before {
+    @include background-image(linear-gradient(to bottom, $green, $fuscia, $maroon));
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .55;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: 2;
 }
 
 h1,
@@ -26,4 +52,27 @@ a {
 
 a {
   @include transition(color .3s ease-in-out);
+}
+
+a:hover {
+  color: $green;
+}
+
+.about,
+.work {
+  position: relative;
+  z-index: 3;
+}
+
+.work__list {
+  color: $white;
+  padding: 0;
+}
+
+.inner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+  z-index: 3;
 }
